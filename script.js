@@ -5,7 +5,7 @@ const contenu = [
     "Sans parler: Mr Deoel",
     "Sans parler: Mr Guelord",
     "Jobabu",
-    "Gloria",
+    "Sans parler: Gloria",
     "Axel",
     "Gerard"
 ];
@@ -30,6 +30,8 @@ function reductionTemps() {
         ko.disabled = true;
         clearInterval(timer);
         document.getElementById('trouver').innerText = "Trouver : " + trouver;
+        document.getElementById('question').innerText = "";
+        document.getElementById('recommencer').hidden = false;
     } else {
         temps--;
     }
