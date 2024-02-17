@@ -1,5 +1,14 @@
 // Tableau de contenu
-const contenu = ["Contenu 1", "Contenu 2", "Contenu 3", "Contenu 4"];
+const contenu = [
+    "Sans parler: Papa Wenzy", 
+    "Sans parler: Aggée",
+    "Sans parler: Mr Deoel",
+    "Sans parler: Mr Guelord",
+    "Jobabu",
+    "Gloria",
+    "Axel",
+    "Gerard"
+];
 
 // Fonction pour afficher un contenu aléatoire
 function afficherContenu() {
