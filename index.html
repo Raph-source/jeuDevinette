@@ -1,45 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Random Content</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
 </head>
 <body>
-<button id="btn">Afficher contenu aléatoire</button>
-<p id="content"></p>
-
-<script>
-// Tableau de contenu
-const contenu = ["Contenu 1", "Contenu 2", "Contenu 3", "Contenu 4"];
-
-// Fonction pour afficher un contenu aléatoire
-function afficherContenu() {
-    const randomIndex = Math.floor(Math.random() * contenu.length);
-    document.getElementById("content").textContent = contenu[randomIndex];
-}
-
-// Compte à rebours
-let countdown = 10;
-const btn = document.getElementById("btn");
-
-function countdownTimer() {
-
-    if (countdown === 0) {
-        btn.disabled = true;
-        clearInterval(timer);
-    } else {
-        countdown--;
-    }
-}
-
-btn.addEventListener("click", function() {
-    afficherContenu();
-});
-
-let timer = setInterval(countdownTimer, 1000);
-
-</script>
-
+    <a href="gamePanel.html">Commencer</a>
 </body>
 </html>
