@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(244, 240, 240);
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    
+.container {
+    display: flex;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    padding-top: 10%;
+}
+    
+.description {
+    background: linear-gradient(to right, #ffcccc, #ff99cc);
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    border: 2px solid #ccf0ff;
+}
+
+.description h2 {
+    padding-top: 10%;
+}
+
+.description h2, .description p {
+    background: linear-gradient(to right, #7a9dac, #04417e );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+    
+.image {
+    flex: 1;
+    background-image: url('../img/qst.png');
+    background-size: cover; 
+    /* background-size: contain; */ /* Pour remplir le div */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-top: 1px solid #ccf0ff;
+    box-shadow: 0 4px 6px #ffcccc;
+}
+    
+.btnStart {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #7a9dac, #04417e);
+    margin-top: 10%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.timer {
+    background: linear-gradient(to right, #069559,#8df4c9);
+    height: 16px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.secondes {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+    font-size: 30px;
+}

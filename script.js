@@ -18,14 +18,18 @@ function afficherContenu() {
 //premier mot
 afficherContenu();
 
-let temps = 10;
+let temps = 30;
 let trouver = 0;
 let ok = document.getElementById("OK");
 let ko = document.getElementById("KO");
+let time =  document.getElementById("timer");
+let reduction = Math.floor(100/temps);
+let width = 100;
 
 function reductionTemps() {
-    document.getElementById('time').innerText = temps;
+    document.getElementById('time').innerText = `${temps} Sec`;
     if (temps === 0) {
+        time.style.width = 0
         ok.disabled = true;
         ko.disabled = true;
         clearInterval(timer);
@@ -34,6 +38,7 @@ function reductionTemps() {
         document.getElementById('recommencer').hidden = false;
     } else {
         temps--;
+        time.style.width = `${width -= reduction}%`;
     }
 }
 
